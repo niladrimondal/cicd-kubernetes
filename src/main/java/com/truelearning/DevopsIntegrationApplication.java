@@ -11,7 +11,7 @@ public class DevopsIntegrationApplication {
 
 	@GetMapping
 	public String message(){
-		return "Welcome to Kubernetes";
+		return "Welcome to Kubernetes, Niladri's Class";
 	}
 
 	public static void main(String[] args) {
