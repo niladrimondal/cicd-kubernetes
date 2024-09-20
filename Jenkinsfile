@@ -1,9 +1,15 @@
 pipeline {
     agent any
     stages{
+        stage('Checkout the Source Code') {
+            steps {
+                echo 'Checkout the code..........................................'
+                git 'https://github.com/niladrimondal/cicd-kubernetes.git'
+            }
+        }
         stage('Build Maven'){
             steps{
-                git url:'https://github.com/niladrimondal/cicd-kubernetes/'
+                // git url:'https://github.com/niladrimondal/cicd-kubernetes/', branch: "main"
                sh 'mvn clean install'
             }
         }
