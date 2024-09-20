@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('Build Maven'){
             steps{
-                git url:'https://github.com/niladrimondal/cicd-kubernetes/', branch: "main"
+                git url:'https://github.com/niladrimondal/cicd-kubernetes/'
                sh 'mvn clean install'
             }
         }
