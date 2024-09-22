@@ -11,7 +11,7 @@ public class DevopsIntegrationApplication {
 
 	@GetMapping
 	public String message(){
-		return "Welcome to Kubernetes, Niladri's Class";
+		return "We have completed the k8s Devops, Thank you staragile";
 	}
 
 	public static void main(String[] args) {
